@@ -51,6 +51,7 @@
     "react": ">=15.2.2"
   },
   "dependencies": {
-    "@types/react-image-crop": "^3.0.1"
+    "@types/react-image-crop": "^3.0.1",
+    "react-modal": "^3.6.1"
   }
 }

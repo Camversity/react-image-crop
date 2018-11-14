@@ -1,6 +1,8 @@
 /* globals document, FileReader */
 import React, { PureComponent } from 'react';
 import ReactDOM from 'react-dom'; // eslint-disable-line
+import ReactModal from 'react-modal';
+
 import ReactCrop from '../lib/ReactCrop';
 import '../dist/ReactCrop.css';
 
@@ -69,7 +71,10 @@ function loadEditView(dataUrl) {
 
     render() {
       return (
-        <div>
+        <ReactModal
+          isOpen
+        >
+          <h1>Test</h1>
           <ReactCrop
             crop={this.state.crop}
             disabled={this.state.disabled}
@@ -84,7 +89,7 @@ function loadEditView(dataUrl) {
           />
           <button type="button" onClick={this.onButtonClick}>Programatically set crop</button>
           <button type="button" onClick={this.onButtonClick2}>Change to 16/9 aspect</button>
-        </div>
+        </ReactModal>
       );
     }
   }
