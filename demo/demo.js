@@ -15,9 +15,11 @@ function loadEditView(dataUrl) {
       crop: {
         x: 20,
         y: 10,
+        // when all 3 set, it defaults to image aspect ratio
+        // on initial load, works as expected if `height` is commented
         width: 40,
         height: 40,
-        // aspect: 16 / 9,
+        aspect: 1,
       },
       disabled: false,
     }
